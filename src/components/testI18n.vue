@@ -6,6 +6,7 @@
     {{ $t('langTest') }}
     <br/>
     <br/><br/><br/>
+    
     <el-button @click="testbt"> {{ $t('changLanguage') }}</el-button>
     
   </div>
