@@ -1,14 +1,35 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
 
   const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    name: 'home',
+    redirect:'/pageList'
+  },
+  {
+    path: '/pageList',
+    name: 'pageList',
+    component: () => import(/* webpackChunkName: "about" */ '../views/pageList.vue'),
+    children:[
+      {
+        path: '/',
+        name: 'auto',
+        redirect: '/pageList/parent'
+      },
+      {
+        path: '/pageList/parent',
+        name: 'parent',
+        component: ()=> import('../components/parent.vue')
+      },
+      {
+        path: '/pageList/testI18n',
+        name: 'testI18n',
+        component: ()=> import('../components/testI18n.vue')
+      }
+    ]
   },
   {
     path: '/about',

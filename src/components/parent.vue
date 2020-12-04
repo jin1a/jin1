@@ -6,7 +6,7 @@
 
     <br><br>
     <div>以下为多选框</div>
-    <div>
+    <div>      
       <newCheckbox v-model="newChBox"></newCheckbox>
       <div>复选父组件：{{newChBox}}</div>
     </div>

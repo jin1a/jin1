@@ -1,4 +1,5 @@
 {
   "message": "hello",
-  "langTest":"Language Test"
+  "langTest":"Language Test",
+  "changLanguage": "Switch to Chinese"
 }
