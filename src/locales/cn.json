@@ -1,4 +1,5 @@
 {
   "message": "你好",
-  "langTest":"语言测试"
+  "langTest":"语言测试",
+  "changLanguage": "切换到英文"
 }

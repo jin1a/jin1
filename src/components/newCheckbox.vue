@@ -1,7 +1,7 @@
 <template>
   <div >
     <div>子组件：{{value}}</div>
-    <label>单选：</label> <input type="checkbox" v-model="checkBoxVal" value="tt" @input="inputFn">
+    <label>单选：</label> <input type="checkbox" v-model="checkBoxVal" value="tt" @change="inputFn">
     <input type="text" v-model="checkBoxVal">
   </div>
 </template>
@@ -24,8 +24,8 @@ export default {
   },
   methods:{
     inputFn : function(e){
-      console.log("this.$event.target.value",e)
-      //this.$emit('input', this.$event.target.value)
+      console.log("this.$event.target.value",e)      
+      this.$emit('input', this.checkBoxVal)
     }
     
   }
