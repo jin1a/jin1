@@ -28,6 +28,11 @@ Vue.use(VueRouter)
         path: '/pageList/testI18n',
         name: 'testI18n',
         component: ()=> import('../components/testI18n.vue')
+      },
+      {
+        path: '/pageList/maopao',
+        name: 'maopao',
+        component: ()=> import('../components/events/maopao.vue')
       }
     ]
   },
