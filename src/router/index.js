@@ -33,6 +33,11 @@ Vue.use(VueRouter)
         path: '/pageList/maopao',
         name: 'maopao',
         component: ()=> import('../components/events/maopao.vue')
+      },
+      {
+        path: '/pageList/mock',
+        name: 'mock',
+        component: ()=> import('../components/mock.vue')
       }
     ]
   },

@@ -2,7 +2,7 @@
   <div >
       <div id="div1" @click="clikFun1">
           <div id="div2" @click="clikFun2">
-              <div id="div3" @click="clikFun3">213123123122113</div>
+              <div id="div3" @click.stop="clikFun3">213123123122113</div>
           </div>
       </div>
   </div>
@@ -42,9 +42,9 @@ export default {
         console.log(2222)
         event.stopPropagation()
     },
-    clikFun3(event){
+    clikFun3(){
         console.log(333)
-        event.stopPropagation()
+       // event.stopPropagation()
     }
   }
   

@@ -10,6 +10,8 @@ Vue.use(VueAxios,axios);
 
 Vue.config.productionTip = false
 
+
+require('./mock');
 new Vue({
   router,
   store,

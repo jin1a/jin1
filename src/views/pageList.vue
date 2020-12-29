@@ -5,6 +5,7 @@
       <li><router-link :to="{path:'/pageList/parent'}"> 1、自定义组件v-model</router-link></li>
       <li><router-link :to="{path:'/pageList/testI18n'}">2、国际化</router-link></li>
       <li><router-link :to="{path:'/pageList/maopao'}">3、vue事件冒泡</router-link></li>
+      <li><router-link :to="{path:'/pageList/mock'}">4、mock数据</router-link></li>
     </ul>
   </div>
   <div class="contents">
