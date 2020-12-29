@@ -1,6 +1,7 @@
 <template>
   <div >
-    mock 数据
+    mock 数据 console.log()打印
+    <br><br><br><br>
     <button @click="getDdata">调取mock数据</button>
   </div>
 </template>
